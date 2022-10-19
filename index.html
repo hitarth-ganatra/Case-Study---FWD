@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Heros</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">Marvel Heroes</a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="#" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;" target="_blank">About Us</a></li>
+				<li><a href="contact.html" style="--i:3;">Join Us</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="box" style="--i:3;">
+				<div class="imgBx">
+					<a href="spiderman.html"><img src="img1.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:4;">
+				<div class="imgBx">
+					<a href="ironman.html"><img src="img2.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:5;">
+				<div class="imgBx">
+					<a href="captainmarvel.html"><img src="img3.jpg"></a>
+				</div>
+			</div>
+			<div class="box" style="--i:6;">
+				<div class="imgBx">
+					<a href="thor.html"><img src="img4.jpg"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<ul class="sci">
+				<li><a href="#" style="--i:9">Facebook</a></li>
+				<li><a href="#" style="--i:8">Twitter</a></li>
+				<li><a href="#" style="--i:7">Instagram</a></li>
+			</ul>
+			<p class="copyrightText">&copy; Hitarth Ganatra, 2022</p>
+		</div>
+	</section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
+</body>
+</html>
+

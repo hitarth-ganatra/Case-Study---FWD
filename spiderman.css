@@ -1,0 +1,17 @@
+.contentBx1{
+	width: 100%;
+}
+.contentBx1 img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.movies img{
+	width: 250px;
+	height: 200px;
+	/* margin: 30px; */
+	transition: 0.3s;
+}
+.movies img:hover{
+	transform: scale(1.2);
+}
