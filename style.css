@@ -36,10 +36,10 @@ section header
 }
 section header .logo
 {
-	position: relative;
+	/* position: relative; */
 	font-size: 28px;
 	color: #111;
-	text-decoration: none;
+	/* text-decoration: none; */
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 700;

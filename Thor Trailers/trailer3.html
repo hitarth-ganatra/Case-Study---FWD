@@ -2,14 +2,51 @@
 <html lang="en">
 <head>
     <title>Thor: Ragnarok Trailer</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Thor: Ragnarok Trailer</h1>
-    <video src="trailer.mp4" controls  preload="none" poster="../t3.webp" width="550px" height="250px"></video>
-    <h3>Listen to the Audio Now !!</h3>
-    <audio src="trailer.mp4" controls loop></audio>
-    <hr><hr>
-    <br>
-    
+    <section>
+        <header>
+            <a href="../thor.html" style="color: black; font-weight: 700; font-size: 23px;">&lt;-&nbsp;  Go back to Movies Page</a>
+            <h1 class="logo" style="text-align: center;">Marvel Heroes</h1>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="../index.html" style="--i:1;">Home</a></li>
+                <li><a href="../about.html" style="--i:2;" target="_blank">About Us</a></li>
+                <li><a href="../contact.html" style="--i:3;">Join Us</a></li>
+            </ul>
+        </header>
+        <hr><hr>
+        <br>
+        <div style="border: 6px ridge;">
+            <br>
+            <h1 align="center"><u style="text-decoration-color: grey;">Thor: Ragnarok Trailer</u></h1>
+            <br>
+            <video src="trailer.mp4" controls  preload="none" poster="../t3.webp" width="550px" height="250px"></video>
+        </div>
+        <br>
+        <hr><hr>
+        <br>
+        <h3>Listen to the Audio Now !!</h3>
+        <audio src="trailer.mp4" controls loop></audio>
+        <hr><hr>
+        <br>
+        <h2 align="center">Box Office (You can edit our content for good purpose as well !!!)</h2>
+        <br>
+        <p contenteditable align="center">
+            The film had a worldwide opening of $1.2 billion, the biggest of all time and nearly double Infinity War's previous record of $640 million.[152] It is also the fastest film ever to eclipse the $1 billion and $1.5 billion mark, doing so in just five days and eight days, respectively.[153] Deadline Hollywood estimated the film would break even just five days after its release, which is "unheard of for a major studio tentpole during its opening weekend".[2] The website eventually calculated the film's final net profit as $890 million, accounting for production budgets, marketing, talent participations, and other costs; box office grosses and home media revenues placed it first on their list of 2019's "Most Valuable Blockbusters".[154]
+        </p>
+        <br>
+        <hr><hr>
+        <br>
+    </section>
+    <script>
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>    
 </body>
 </html>
