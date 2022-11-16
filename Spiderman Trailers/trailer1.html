@@ -2,25 +2,46 @@
 <html lang="en">
 <head>
     <title>Spider-Man Homecoming Trailer</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Spider-Man Homecoming Trailer</h1>
-    <video src="trailer.mp4" controls controlsList="nodownload" preload="metadata" poster="../s1.jpg" width="550px" height="250px"></video>
-    <h3>Download the Audio of the trailer</h3>
-    <audio src="trailer.mp4" controls loop></audio>
-    <hr><hr>
-    <br>
-    <fieldset>
-        <legend>Give us Feedback about the video quality</legend>
-        <form action="#" method="get">
-            <label for="comments">Tell Us :</label>
+    <section>
+        <header>
+            <h1 class="logo">Marvel Heroes</h1>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;">Home</a></li>
+                <li><a href="about.html" style="--i:2;" target="_blank">About Us</a></li>
+                <li><a href="contact.html" style="--i:3;">Join Us</a></li>
+            </ul>
+        </header>
+        <hr><hr>
+        <br>
+        <div style="border: 10px ridge ; border-style: ridge;">
             <br>
-            <textarea name="comments" id="comments" id="" cols="30" rows="10" wrap="hard"></textarea>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </fieldset>
-    <h1>Preview to main page</h1>
-    <iframe src="../index.html" width="700px" height="1200px"></iframe>
+            <h1 align="center"><u style="text-decoration-color: grey;">Spider-Man Homecoming Trailer</u></h1>
+            <br>
+            <video src="trailer.mp4" controls preload="metadata" poster="../s1.jpg" width="100%" height="500px" style="align-self: center;"></video>
+        </div>
+        <br>
+        <hr><hr>
+        <br>
+        <h3>Listen to the Audio Now !!</h3>
+        <audio src="trailer.mp4" controls loop></audio>
+        <hr><hr>
+    </section>
+	<script>
+		let imgBx = document.querySelectorAll('.imgBx');
+		imgBx.forEach(popup => popup.addEventListener('click', () =>{
+			popup.classList.toggle('active')
+		}))
+
+		function toggleMenu(){
+	      var menuToggle = document.querySelector('.toggle');
+	      var navigation = document.querySelector('.navigation');
+	      menuToggle.classList.toggle('active');
+	      navigation.classList.toggle('active');
+	    }
+	</script>
 </body>
 </html>
