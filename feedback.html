@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Give Us Feedback</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <style>
+    body{
+        min-height: 100vh;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+    }
+  </style>
+  <body bgcolor="f1f503">
+	<section>
+		<header>
+			<h1 class="logo">Marvel Heroes</h1>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="index.html" style="--i:1;">Home</a></li>
+				<li><a href="#" style="--i:2;" target="_blank">Give Us Feedback</a></li>
+				<li><a href="contact.html" style="--i:3;">Join Us</a></li>
+			</ul>
+		</header>
+    <h1><u>Give Us Feedback</u></h1>
+    <br>
+    <fieldset>
+        <form action="index.html" method="get">
+            <table cellspacing="12px">
+                <tr>
+                    <td>
+                        <label>First Name <span style="color: red">*</span></label>
+                    </td>
+                    <td>
+                        <input type="text" required placeholder="First Name" autocomplete="on"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Last Name <span style="color: red">*<span></label>
+                    </td>
+                    <td>
+                        <input type="text" required placeholder="Last Name" autocomplete="on">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Describe your Feedback <span style="color: red">*</span></label>
+                    </td>
+                    <td>
+                        <textarea name="feedback" autocomplete="on"></textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email<span style="color: red">*</span></label>
+                    </td>
+                    <td>
+                        <input type="email" required placeholder="Email" autocomplete="on"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password<span style="color: red">*</span></label>
+                    </td>
+                    <td>
+                        <input type="password" required placeholder="Password" autocomplete="on"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Rating</label><br >
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" value="star1"><label>&#9733;</label><br>
+                        <input type="radio" name="radio" value="star2"><label>&#9733;&#9733;</label><br>
+                        <input type="radio" name="radio" value="star3"><label>&#9733;&#9733;&#9733;</label><br>
+                        <input type="radio" name="radio" value="star4"><label>&#9733;&#9733;&#9733;&#9733;</label><br>
+                        <input type="radio" name="radio" value="star5"><label>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div align="center">
+                            <input type="submit">
+                            <input type="Reset">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</section>
+<script>
+    function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      var navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+    }
+</script>
+  </body>
+</html>

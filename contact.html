@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Contact Us</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
@@ -22,29 +21,28 @@
         </div>
         <div class="formBx">
             <div class="form signinform">
-                <form action="http://perfectcode.cf" method="POST">
+                <form action="index.html" method="get">
                     <h3>Sign In</h3>
-                    <label for="username">Username :</label><br>
-                    <input type="text" placeholder="Username" id="username" name="uname">
-                    <label for="password">Password :</label><br>
-                    <input type="password" placeholder="Password" id="password" name="pwd">
+                    <label for="username" title="Enter your username">Username : <span style="color: red;"><sup>*</sup></span></label><br>
+                    <input type="text" placeholder="Username" id="username" name="uname" required>
+                    <label for="password" title="Enter your password">Password : <span style="color: red;"><sup>*</sup></span></label><br>
+                    <input type="password" placeholder="Password" id="password" name="pwd" pattern="[A-Z]{10}" title="In the format of (A-Z 10 Characters)" required>
                     <input type="submit" value="Login">
                     <a href="#" class="forgot">Forgot Password</a>
                 </form>
             </div>
             <div class="form signupform">
-                <form action="http://perfectcode.cf" method="POST">
+                <form action="index.html" method="POST">
                     <h3>Sign Up</h3>
-                    <label for="username">Username :</label><br>
-                    <input type="text" placeholder="Username" id="username" name="uname">
-                    <label for="email">Email :</label><br>
-                    <input type="email" placeholder="Email Address" id="email" name="email">
-                    <label for="password">Password :</label><br>
-                    <input type="password" placeholder="Password" id="password" name="pwd">
-                    <label for="conf">Confirm Password :</label><br>
-                    <input type="password" placeholder="Confirm Password" id="conf" name="conf_pwd">
+                    <label for="username" title="Enter your username">Username : <span style="color: red;"><sup>*</sup></span></label><br>
+                    <input type="text" placeholder="Username" id="username" name="uname" required>
+                    <label for="email" title="Enter your email">Email : <span style="color: red;"><sup>*</sup></span></label><br>
+                    <input type="email" placeholder="Email Address" id="email" name="email" required>
+                    <label for="password" title="Enter your password">Password : <span style="color: red;"><sup>*</sup></span></label><br>
+                    <input type="password" placeholder="Password" id="password" name="pwd" required>
+                    <label for="conf" title="Confirm your Password">Confirm Password : <span style="color: red;"><sup>*</sup></span></label><br>
+                    <input type="password" placeholder="Confirm Password" id="conf" name="conf_pwd" required>
                     <input type="submit" value="Register">
-                    
                 </form>
             </div>
         </div>
